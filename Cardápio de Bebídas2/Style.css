@@ -1,0 +1,97 @@
+body {
+    background-color: yellow;
+    background-size: 115%;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+p {
+    color: yellow;
+    font-size: 100px;
+    font-style: Times;
+}
+
+#menu {
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+
+#menu ul {
+    text-align: center;
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    padding: 2px 10px;
+    font-size: 22px;
+
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+}
+
+#menu ul li a:hover {
+    background-color: grey;
+    color: yellow;
+    border-bottom: 3px solid black;
+}
+
+#cardapio{
+     display: flex;
+     flex-direction: row;
+}
+#cardapio img{
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+#Sucos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    background-color: rgba(0,0,0, 0.85);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+#Refrigerante{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    background-color: rgba(0,0,0, 0.85);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+#Álcooll{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    background-color: rgba(0,0,0, 0.85);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+#footer{
+    justify-content: center;
+}
+
+
+
