@@ -1,0 +1,28 @@
+body{
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: url(../img/Papaco2.jpg);
+}
+
+main{
+    background-color: tomato;
+    box-shadow: 15px 10px 20px grey;
+    width: 80%;
+    height: 500px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    background-color: lightpink;
+    width:  80%;
+    height: 80%;
+    text-align: center;
+    box-shadow: 15px 10px  orange;
+
+}
+
