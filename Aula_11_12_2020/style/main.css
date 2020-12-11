@@ -1,0 +1,49 @@
+h1{
+    background-color: blueviolet;
+    width: 150%;
+    height: 300%;
+    margin: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+#triangulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#notas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:black;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+section{
+    background-color: blueviolet;
+    width: 150%;
+    height: 300%;
+    margin: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+}
+
+body{
+    display: table-row;
+    justify-content: center;
+    text-align: center;
+    background-color: cyan;
+    width: 150%;
+    height: 300%;
+    border-radius: 10px;
+} 
