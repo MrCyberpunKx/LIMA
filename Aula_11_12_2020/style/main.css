@@ -43,10 +43,8 @@ body{
     justify-content: center;
     text-align: center;
     background-image: url(../img/img/calculadora.png);
-    background-size: 100%;
+    background-size: 115%;
     background-repeat: repeat-y;
     background-position: center;
-    width: 500%;
-    height: 500%;
     border-radius: 10px;
 } 
