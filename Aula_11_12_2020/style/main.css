@@ -1,5 +1,5 @@
 h1{
-    background-color: blueviolet;
+    background-color: grey;
     width: 150%;
     height: 300%;
     margin: 15px;
@@ -30,7 +30,7 @@ h1{
 }
 
 section{
-    background-color: blueviolet;
+    background-color: grey;
     width: 150%;
     height: 300%;
     margin: 15px;
@@ -42,8 +42,11 @@ body{
     display: table-row;
     justify-content: center;
     text-align: center;
-    background-color: cyan;
-    width: 150%;
-    height: 300%;
+    background-image: url(../img/img/calculadora.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: center;
+    width: 500%;
+    height: 500%;
     border-radius: 10px;
 } 
