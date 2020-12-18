@@ -44,3 +44,91 @@ function VerificarNotas(){
     document.getElementById("media_final").textContent = resultado
     
 }
+
+
+
+
+function  converter() {
+    let temp = parseFloat(document.getElementById("temp").value)
+    let resultado = ""
+ 
+    switch (operacao) {
+       case "Celsius para Fahrenheit":
+            console.log("C");
+            resultado = 1.8* temp + 32
+          break;
+       case "Fahrenheit para Celsius":
+             console.log("F");
+             resultado = (temp - 32)/ 1.8
+    
+       default:
+          console.log("Não é poss-ivel reslizar a conversão");
+    }
+ document.getElementById("resultado").textContent = resultado
+ }
+
+
+
+
+
+var valor;
+var resultado;
+function botao(num) {
+   valor = document.calc.visor.value += num;
+}
+
+function reseta() {
+   document.calc.visor.value = "";
+}
+
+function calcula() {
+   resultado = eval(valor);
+   document.calc.visor.value = resultado;
+   
+}
+
+
+function conversaoMoeda(){
+    let resultado = ""
+    var opcao = document.getElementById("opções").value; 
+    let valor = document.getElementById("text2").value;
+    let dolarAmericano = 5.0;
+    let dolarCanadense = 4.0;
+    let dolarAustraliano = 3.0;
+    switch (opcao){
+        case "US$":
+            document.getElementById("valorFinal").textContent = (valor/dolarAmericano).toFixed(2);
+            break
+        case "C$":
+            document.getElementById("valorFinal").textContent = (valor/dolarCanadense).toFixed(2);
+            break
+        case "A$":
+            document.getElementById("valorFinal").textContent = (valor/dolarAustraliano).toFixed(2);
+            break
+        default:
+            document.getElementById("valorFinal").textContent = resultado
+    }
+}
+
+
+function verificarCPF(){
+    let cpf = document.getElementById("entrada").value
+    let resultado = ""
+
+    //obter terceiro segmento do CPF 111.222.333-DD
+    let segmento = parseInt(cpf.split("-")[0].split(".")[2].split("")[2])
+
+    switch(segmento)
+    {
+        case 1:
+            resultado = "SP"
+            break
+        case 4:
+            resultado = "PB"
+            break
+        case 9:
+            resultado = "RJ"
+            break
+    }
+    document.getElementById("saida").textContent = resultado
+}
