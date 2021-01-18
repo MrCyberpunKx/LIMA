@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desce pro Play</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="./js/jogo.js"></script>
+    <script src="./js/deck.js"></script>
+</head>
+<body>
+    <main>
+        Pontuação Atual: <input id="pontuacao-atual" type="text"> / Record Atual : <span id="record"> 1000 </span> 
+        <button onclick="novoRecord()">Salvar Pontuação - Novo Record</button>
+        <section id="tabuleiro" >
+            <div id="card-1" class="card">
+                Qual é a populção total da Noruega ?<br>
+                <img id="img-1" src="./img/norway.png" alt="#"> <br>
+                <input type="radio" name="resp-1" id="alt1"><label>100 Milhões</label><br>
+                <input type="radio" name="resp-2" id="alt2"><label>50 Milhões</label><br>
+                <input type="radio" name="resp-3" id="alt3"><label>5 Milhões</label><br>
+            </div>
+            <div id="card-2" class="card">
+                HTML é uma linguagem de marcação ?<br>
+                <img id="img-2" src="./img/html.jfif" alt="#"><br>
+                <input type="radio" name="resp-1" id="alt4"><label>Sim</label><br>
+                <input type="radio" name="resp-2" id="alt5"><label>Não</label><br>
+                <input type="radio" name="resp-3" id="alt6"><label>Qualé, eu não sei</label><br>
+            </div>
+            <div id="card-3" class="card">
+                Qual é a cor resultante quando juntamos todas as cores ?<br>
+                <img id="img-3" src="./img/colors.jfif" alt="#"><br>
+                <input type="radio" name="resp-1" id="alt7"><label>Preto</label><br>
+                <input type="radio" name="resp-2" id="alt8"><label>Branco</label><br>
+                <input type="radio" name="resp-3" id="alt9"><label>Escuridão eterna de uma mente Solitária</label><br>
+            </div>
+            <div id="card-4" class="card">
+                A Irlanda faz parte do Reino-Unido ?<br>
+                <img id="img-1" src="./img/ireland.jfif" alt="#"> <br>
+                <input type="radio" name="resp-1" id="alt10"><label>Sim</label><br>
+                <input type="radio" name="resp-2" id="alt11"><label>Michael Collins</label><br>
+                <input type="radio" name="resp-3" id="alt12"><label>não</label><br>
+            </div>
+            <div id="card-5" class="card">
+                Qual o nome do Vocalista do MOTORHEAD ?<br>
+                <img id="img-2" src="./img/Lemmy.jfif" alt="#"><br>
+                <input type="radio" name="resp-1" id="alt13"><label>Lemmy Kilmister</label><br>
+                <input type="radio" name="resp-2" id="alt14"><label>Lenny Killmister</label><br>
+                <input type="radio" name="resp-3" id="alt15"><label>Jenny Misterkil</label><br>
+            </div>
+            <div id="card-6" class="card">
+                Essa é o melhor grupo musical de todos os tempos ?<br>
+                <img id="img-3" src="./img/ACDC.jfif" alt="#"><br>
+                <input type="radio" name="resp-1" id="alt16"><label>Sim</label><br>
+                <input type="radio" name="resp-2" id="alt17"><label>Com Certeza</label><br>
+                <input type="radio" name="resp-3" id="alt18"><label>Sim,Com Certeza, Absoluta</label><br>
+            </div>
+            <div id="card-7" class="card">
+                Qual é o certo de se chamar ?<br>
+                <img id="img-1" src="./img/bolacha.jfif" alt="#"> <br>
+                <input type="radio" name="resp-1" id="alt19"><label>Bolacha</label><br>
+                <input type="radio" name="resp-2" id="alt20"><label>Biscoito</label><br>
+                <input type="radio" name="resp-3" id="alt21"><label>Vai se Ferrar!</label><br>
+            </div>
+            <div id="card-8" class="card">
+                O que significa a sigla NBA ?<br>
+                <img id="img-2" src="./img/nba.jfif" alt="#"><br>
+                <input type="radio" name="resp-1" id="alt22"><label>National Basketball Association</label><br>
+                <input type="radio" name="resp-2" id="alt23"><label>Na BoA</label><br>
+                <input type="radio" name="resp-3" id="alt24"><label>No-Beach-Again</label><br>
+            </div>
+            <div id="card-9" class="card">
+                Qual é consideravél o menor país do mundo ?<br>
+                <img id="img-3" src="./img/globe.jfif" alt=""><br>
+                <input type="radio" name="resp-1" id="alt25"><label>Jamaica</label><br>
+                <input type="radio" name="resp-2" id="alt26"><label>Japão</label><br>
+                <input type="radio" name="resp-3" id="alt27"><label>Vaticano</label><br>
+            </div>
+            <div id="card-10" class="card">
+                Qual é a única banda que importa?<br>
+                <img id="img-1" src="./img/rock.jfif" alt="#"> <br>
+                <input type="radio" name="resp-1" id="alt28"><label>Rolling Stones</label><br>
+                <input type="radio" name="resp-2" id="alt29"><label>The Clash</label><br>
+                <input type="radio" name="resp-3" id="alt30"><label>Joy Divison</label><br>
+            </div>
+            <div id="card-11" class="card">
+                Complete A frase: God Save the Queen,<br>
+                <img id="img-2" src="./img/sex.pistols.jfif" alt="#"><br>
+                <input type="radio" name="resp-1" id="alt31"><label>She ain´t no human Being</label><br>
+                <input type="radio" name="resp-2" id="alt32"><label>And there´s no future</label><br>
+                <input type="radio" name="resp-3" id="alt33"><label>in England´s Dreamin!</label><br>
+            </div>
+            <div id="card-12" class="card">
+                Como são chamados os "androides" neste FILME!<br>
+                <img id="img-3" src="./img/blade.jfif" alt="#"><br>
+                <input type="radio" name="resp-1" id="alt34"><label>Andys</label><br>
+                <input type="radio" name="resp-2" id="alt35"><label>Replicantes</label><br>
+                <input type="radio" name="resp-3" id="alt36"><label>Androides/Cyborgs</label><br>
+            </div>
+            
+
+        </section>
+
+        <script>iniciaJogo()</script>
+    </main>
+
+</body>
+</html>
