@@ -1,5 +1,5 @@
 const question = document.querySelector('#question');
-const choice = Array.form(document.querySelectorAll('.choices-text'));
+const choice = document.querySelectorAll('.choices-text');
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
@@ -17,15 +17,17 @@ let questions = [
         choice2: "50",
         choice3: "25",
         choice4: "5",
-        answer: 5,
+        answer: "5",
     },
+    
     {
-        question:"HTML é uma linguagem de marcação?",
+        question:
+            "HTML é uma linguagem de marcação?",
         choice1: "Sim",
         choice2: "Não",
         choice3: "Depende",
         choice4: "Qualé, eu não sei",
-        answer: Sim,
+        answer: "Sim",
     },
     {
         question: "Qual é a cor resultante quando juntamos todas as cores?",
@@ -33,7 +35,7 @@ let questions = [
         choice2: "Marrom",
         choice3: "Branco",
         choice4: "Escuriadão eterna de uma mente solitária",
-        answer: Branco,
+        answer: "Branco",
     },
     {
         question: "A Irlanda faz parte do Reino-Unido?",
@@ -41,11 +43,11 @@ let questions = [
         choice2: "Potato",
         choice3: "BullShit",
         choice4: "Não",
-        answer: Não,
-    }
+        answer: "Não",
+    },
 ]
 
-const SCORE_POINTS = 100
+const SCORE_POINTS = 666
 const MAX_QUESTIONS = 4
 
 startGame = () => {
