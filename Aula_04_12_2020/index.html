@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+    <title>Login04</title>
+</head>
+<body>
+    <script>
+        var usuario_salvo = "daniel"
+        var senha_salva = "senha"
+
+        function VerificaCredenciais(){
+            let usuario_digitado = document.getElementById("usuario").value
+            let senha_digitada = document.getElementById("senha").value
+
+            if ((usuario_digitado == usuario_salvo) && (senha_digitada == senha_salva)){
+              document.getElementById("usuario").style.backgroundColor = "green"
+              document.getElementById("senha").style.backgroundColor = "green" 
+              alert("Credenciais OK!")  
+            }else {
+                document.getElementById("usuario").style.backgroundColor = "red"
+                document.getElementById("senha").style.backgroundColor = "red"
+                alert("Usuario ou senha incoreeto!")
+            }
+        }
+        function CadastraCredenciais(){
+            usuario_salvo = document.getElementById("usuario").value
+            senha_salva = document.getElementById("senha").value
+        }
+    </script>
+</head>
+<body>
+<h1>Login</h1>
+<input type="text" id="usuario" placeholder="Nome do Usuário"><br>
+<input type="password" id="senha" placeholder="Senha"><br>
+<button onclick="CadastraCredenciais()">Cadastrar</button>
+<button onclick="VerificaCredenciais()">Verificar</button>                
+</body>
+</html>

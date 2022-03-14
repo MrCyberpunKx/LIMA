@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    background-image: url(../img/Lofoten3.jpg);
+    height: 500;
+    width: 500;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(3, 4, 97);
+    width: 80%;
+    border-radius: 10px;
+    
+}
+
+section{
+    background-image: url(../img/norway.png);
+    width: 80%;
+    margin: 20px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+form > input{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+form > input :focus{
+    background-color: white;
+}
+
+form > a :focus{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    background-color: white;
+
+}
