@@ -1,0 +1,11 @@
+body{
+    display: row;
+    justify-content: none;
+    margin: 90px;
+    background-color: slateblue;
+    height: 500;
+    width: 500;
+}
+
+
+
