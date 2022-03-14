@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafico</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" type="text/css" href="./style/main.css">
+</head>
+<body>
+    <div class="card1">
+        <h1>Fluminense<img src="./img/fluminense.jfif" width="50px" height="50px" align="center "></h1>
+        <canvas id="myChart" width="6" height="3"></canvas>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var ctx = document.getElementById('myChart').getContext('2d');
+var myPieChart = new Chart(ctx, {
+    type: 'polarArea',
+    data: {
+        labels: ['Pontos', 'Partidas', 'Vitórias', 'Empates', 'Derrotas', 'Gols Próprios', 'Gols Contra', 'Saldo de Gols'],
+        datasets: [{
+            label: 'Fluminense (5*)',
+            data: [53, 33, 15, 8, 10, 49, 40, 9],
+            backgroundColor: [
+                'lightgreen',
+                'silver',
+                'lime',
+                'slategrey',
+                'darkred',
+                'green',
+                'red',
+                'white'
+            ],
+            borderColor: [
+                'black',
+                'black',
+                'black',
+                'black',
+                'black',
+                'black',
+                'black',
+                'black'
+            ],
+            borderWidth: 2.5
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+</div>
+</body>
+</html>
