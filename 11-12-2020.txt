@@ -1,0 +1,264 @@
+<h1>Bebídas</h1>
+      <div Id="cardapio">
+        <img src="./Img/burger2.jpg" alt=""></div>
+      <nav id="menu">
+          <ul>
+              <li>
+                  <a href= "Sucos.html">Sucos</a>
+              </li>
+               <li>
+                <a href= "Refrigerante.html">Refrigerantes</a>
+                <li>
+                    <a href="Álcooll.html"> Álcooll</a>
+                </li>
+                <li>
+                    <a href="https://yann000.github.io/comida/home.html"> Página Inicial</a>
+                </li>
+              </li>
+          </ul>
+      </nav>
+
+      <div Id="cardapio">
+          <div id="Sucos">
+          <h2>Suco de Uva</h2>
+          <img src="./Img/Suco de uva.jpg" alt="">
+          <h1>R$5,00</h1>
+      </div>
+
+            <div id="Sucos">
+            <h2>Suco de Laranja</h2>
+            <img src="./Img/Laranja" alt="">
+            <h1>R$5,00</h1>
+       </div>
+
+        
+            <div id="Sucos">
+            <h2>Suco de Melancia</h2>
+            <img src="./Img/melancia" alt="">
+            <h1>R$5,00</h1>
+        </div>
+           
+            
+            <div id="Sucos">
+            <h2>Suco de Limão</h2>
+            <img src="./Img/limao" alt="">
+            <h1>R$5,00</h1>
+        </div>
+       
+            <div id="Sucos">
+            <h2>Suco de Maçã</h2>
+            <img src="./Img/maça" alt="">
+            <h1>R$5,00</h1>
+        </div>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+body {
+    background-image: url(Limoneto.png);
+    background-size: 115%;
+    background-repeat: repeat-y;
+    background-position: center;
+}
+p {
+    color: yellow;
+    font-size: 100px;
+    font-style: Times;
+}
+
+#menu {
+    margin-top: 10px;
+    background-color: black;
+    border-radius: 100px;
+}
+
+
+#menu ul {
+    text-align: center;
+    list-style: none;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    padding: 2px 10px;
+    font-size: 22px;
+
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+}
+
+#menu ul li a:hover {
+    background-color: grey;
+    color: yellow;
+    border-bottom: 3px solid black;
+}
+
+#cardapio{
+     display: flex;
+     flex-direction: row;
+}
+#cardapio img{
+    padding: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+#Sucos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    background-color: rgba(0,0,0, 0.85);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+#Refrigerante{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    background-color: rgba(0,0,0, 0.85);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+#Álcooll{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: yellow;
+    background-color: rgba(0,0,0, 0.85);
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas do bimestre</title>
+    <link href="../Aula_11_12_2020/style/main.css">
+    <script src="./Calcular.js"></script>
+</head>
+<h1>Essas são suas notas. Lide com isso</h1>
+<body>
+    <script>
+        var num1, num2, num3, num4, media_final;
+
+        //entrada
+        num1 = parseFloat(prompt("Digite a sua primeira nota do bimestre: "));
+        num2 = parseFloat(prompt("Digite a sua segunda nota do bimestre: "));
+        num3 = parseFloat(prompt("Digite a sua terceira nota do bimestre: "));
+        num4 = parseFloat(prompt("Digite a sua quarta nota do bimestre: "));
+        
+        //processamento + saida
+        if (media_final >=5)
+        {
+           alert("Você está Aprovado");
+        }
+
+        else if (media_final < 5)
+        {
+            alert("Você está Reprovado");
+        }
+           
+        else
+        {
+            alert("Você está de Recuperação");
+        }
+    </script>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+function calcular(event){
+    let a = parseFloat(document.getElementById("numero1").value)
+    let b = parseFloat(document.getElementById("numero2").value)
+    let c = parseFloat(document.getElementById("numero3").value)
+    let resultado = event.target.textContent
+    let resultado
+    if (a == b && a == c && b ==c) 
+    {
+        document.write("O triangulo é Isóceles!");
+    }
+    else if(a != b && b != c && c != a)
+    {
+        document.write("O triangulo é Escaleno!");
+    }
+    else{
+        document.write("O triangulo é Equilátero!");
+    }
+    document.getElementById("resultado").textContent = resultado
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+body{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    background-color:white;
+    height: 150;
+    width: 150;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: lightcoral;
+    width: 80%;
+    border-radius: 10px;
+    
+}
+
+section{
+    background-image: url(../img/norway.png);
+    width: 80%;
+    margin: 20px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+form > input{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+form > input :focus{
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
